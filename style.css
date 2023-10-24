@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+ } .header{
+    width: 100%;
+    height: 800px;
+    background: url(/WebDevelopmentWorks/Travel/images/181066.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.logo{
+    width: 100%;
+    height: 100px;
+    padding-left: 100px;
+    padding-top: 0px;
+    position: sticky;
+    top: 0;
+}
+.logo h3{
+    font-weight: 750;
+    font-size: 26px;
+    color: #a79770;
+    animation: slideRight 1s ease forwards;
+    position: relative;
+}
+.main-content{
+    padding-top: 40px;
+
+}
+.main-content h1{
+    font-weight: 700;
+    font-size: 3.75rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    animation: slideBottem 1s ease forwards;
+    position: relative;
+}
+.main-content p{
+    width: 760px;
+    font-weight: 510;
+    font-size: 15px;
+    margin: 30px auto 0;
+}
+.content-btn{
+    margin-top: 40px;
+   
+}
+.book-btn{
+    border-radius: 30px;
+    color: white;
+    background-color: #a79770;
+    border: solid #a79770;
+    background-image: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    margin: 0 0 0 auto;
+    padding: 10px 31px 10px 30px;
+    animation: slideRight 1s ease forwards;
+    position: relative;
+}
+.info-btn{
+    border-radius: 30px;
+    color: white;
+    background: transparent;
+    border: solid white;
+    background-image: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    margin: 0 0 0 auto;
+    padding: 10px 31px 10px 30px;
+    background-position: left;
+    animation: slideLeft 1s ease forwards;
+    position: relative;
+}
+.treaking{
+    width: 1400px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    
+}
+.treaking-types{
+    padding: 30px;
+    width: 260px;
+    height: 200px;
+    background-color: #a79770;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    animation: slideTop 1s ease forwards;
+    position: relative;
+}
+.treaking-types h4{
+    margin-top: 30px;
+    color: aliceblue
+}
+.section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section-img{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-content{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section-content h2{
+    margin-right: 616px;
+    margin-bottom: 40px;
+}
+.section-content p{
+    margin-right: 70px;
+}
+.section-img img{
+    width: 350px;
+    height: 350px;
+    border: #a79770 solid 10px;
+    border-radius: 50%;
+}
+.activity{
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    background-color: #a79770;
+    text-align: center;
+    color: aliceblue;
+}
+.activity-head h2{
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+    font-size: 60px;
+    padding-top: 40px;
+}
+.activity-head p{
+    width: 800px;
+    font-size: 18px;
+    margin-left: 400px;
+}
+.activity-img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    background-color: #a79770;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.act-img{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.act-img img{
+    width: 366px;
+    height: 400px;
+    padding-top: 20px;
+}
+
+.content{
+    width: 366px;
+    height: 380px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    margin-top: 20px;
+}
+.content:hover{
+    opacity: 1;
+}
+.content h1{
+    color: #a79770;
+    font-size: 26px;
+    font-weight: 700px;
+}
+.content > *{
+    transform: translateY(25px);
+    transition: 0.6s;
+}
+.content:hover > *{
+    transform: translateY(0px);
+   
+}
+.services{
+    width: 100%;
+    height: 500px;
+    background: url(/WebDevelopmentWorks/Travel/images/group-friends-winter-trip-with-tent.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 300px;
+}
+.service-type{
+
+}
+.services-info{
+    width: 100%;
+    height: 800px;
+    padding-top: 300px;
+
+}
+.planing{
+    width: 100%;
+    height: 400px;
+    padding-right: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.services-info h1{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.planing-catogory{
+    width: 500px;
+    height: 300px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.planing-catogory img{
+    height: 238px;
+    width: 238px;
+    border-radius: 50%;
+}
+.planing-catogory-info h5{
+    font-size: 25px;
+    font-weight: 700;
+}
+.planing-catogory-info p{
+    padding: 18px;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.contact{
+    width: 100%;
+    height: 600px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/WebDevelopmentWorks/Travel/images/kevin-erdvig-k7fUP9RQj3Y-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+.contact-info{
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+}
+.contact-input{
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+}
+.contact-input input{
+    width: 300px;
+    height: 50px;
+    margin-right: 20px;
+    border: white solid 1px;
+    border-radius: 6px;
+    padding: 5px;
+}
+.input input{
+    width: 630px;
+    height: 50px;
+    margin-top: 40px;
+    border: white solid 1px;
+    border-radius: 6px;
+    padding: 5px;
+}
+.contact-input button{
+    width: 600px;
+    height: 45px;
+    border-radius: 25px;
+}
+.contact button{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+
+
+.info-btn:hover{
+    background-position: right;
+    background-color: aliceblue;
+    color: black;
+}
+.section:hover .section-img img{
+    animation: slideRight 1s ease forwards;
+    animation: rotateRight 1s ease forwards;
+    position: relative;
+}
+.section:hover .section-content p{
+    animation: slideLeft 1s ease forwards;
+    position: relative;
+}
+.section:hover .section-content h2{
+    animation: slideBottem 1s ease forwards;
+    position: relative;
+}
+.activity:hover h2{
+    animation: slideRight 1s ease forwards;
+    position: relative;
+}
+.activity:hover .activity-head p{
+    animation: slideLeft 1s ease forwards;
+    position: relative;
+}
+.activity:hover .act-img{
+    animation: slideRight 1s ease forwards;
+    animation: rotateRight 1s ease forwards;
+    transition: 2s;
+    position: relative;
+}
+.services:hover .service-type{
+    animation: slideTop 1s ease forwards;
+    position: relative;
+}
+.services-info:hover h1{
+    animation: slideBottem 1s ease forwards;
+    position: relative;
+}
+.services-info:hover .one{
+    animation: slideRight 1s ease forwards;
+    position: relative;
+}
+.services-info:hover .two{
+    animation: slideLeft 1s ease forwards;
+    position: relative;
+}
+.services-info:hover .three,.four{
+    animation: slideTop 1s ease forwards;
+    position: relative;
+}
+.services-info:hover img{
+    animation: rotate 1s ease forwards;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottem{
+    0%{
+        transform: translatey(-100px);
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translatey(100px);
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+@keyframes rotateRight{
+    0%{
+        transform: rotate(360deg);
+        transform: scale(0.2);
+    }
+    100%{
+        transform: rotate(0deg);
+        transform: scale(1);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(100deg)
+        /* transform: scale(0.2); */
+    }
+    100%{
+       /*  transform: rotateX('0%') */
+        /* transform: scale(1); */
+    }
+}
