@@ -385,7 +385,11 @@
     animation: slideLeft 1s ease forwards;
     position: relative;
 }
-.services-info:hover .three,.four{
+.services-info:hover .three{
+    animation: slideTop 1s ease forwards;
+    position: relative;
+}
+.services-info:hover .four{
     animation: slideTop 1s ease forwards;
     position: relative;
 }
